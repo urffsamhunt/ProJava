@@ -1,3 +1,5 @@
+package ProJava;
+
 import java.util.*;
 class CountingDuplicates {
   public static int duplicateCount(String text) {
@@ -24,5 +26,6 @@ class CountingDuplicates {
     Scanner sc= new Scanner(System.in);
     System.out.println("Enter the sentence");
     System.out.println(duplicateCount(sc.nextLine()));
+    sc.close();
   }
 }

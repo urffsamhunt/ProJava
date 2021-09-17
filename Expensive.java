@@ -1,3 +1,4 @@
+package ProJava;
 import java.util.*;
 
 public class Expensive {
@@ -40,7 +41,7 @@ public class Expensive {
       for (int i = 0; i<drive.length; i++)
       drive[i]=sc.nextInt();
 
-      System.out.println("The most expensive option consumes "+getMoneySpent(keyboard, drive, b)" Dollars");
-
+      System.out.println("The most expensive option consumes "+getMoneySpent(keyboard, drive, b)+" Dollars");
+        sc.close();
     }
 }
