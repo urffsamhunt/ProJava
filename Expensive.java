@@ -1,4 +1,3 @@
-package ProJava;
 import java.util.*;
 
 public class Expensive {
