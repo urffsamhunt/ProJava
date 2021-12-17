@@ -1,3 +1,5 @@
+package ProJava;
+
 import java.util.*;
 class CountingDuplicates {
   public static int duplicateCount(String text) {

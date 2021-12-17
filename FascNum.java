@@ -1,3 +1,4 @@
+package ProJava;
 
 import java.util.Scanner;
 
