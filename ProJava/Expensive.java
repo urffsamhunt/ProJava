@@ -1,5 +1,6 @@
 package ProJava;
-import java.util.*;
+import java.util.Arrays;
+import java.util.Scanner;
 
 public class Expensive {
     static int getMoneySpent(int[] keyboards, int[] drives, int b) {

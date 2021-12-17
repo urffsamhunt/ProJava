@@ -1,5 +1,4 @@
 package ProJava;
-
 import java.util.Scanner;
 
 public class FascNum

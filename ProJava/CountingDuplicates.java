@@ -1,6 +1,5 @@
 package ProJava;
-
-import java.util.*;
+import java.util.Scanner;
 class CountingDuplicates {
   public static int duplicateCount(String text) {
     text=text.toLowerCase();
