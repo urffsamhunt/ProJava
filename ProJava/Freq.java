@@ -6,7 +6,7 @@ public class Freq
     public static void main(String[] args) {
         Scanner sc =new Scanner(System.in);
         System.out.println("Enter the String");
-        String s = sc.nextLine();
+        String s = sc.nextLine().toLowerCase();
         while (s.length() > 0)
         {
             String m = ""+s.charAt(0);

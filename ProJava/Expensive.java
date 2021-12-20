@@ -44,5 +44,4 @@ public class Expensive {
 
       System.out.println("The most expensive option consumes "+getMoneySpent(keyboard, drive, b)+" Dollars");
         sc.close();
-    }
-}
+    }}

@@ -9,7 +9,8 @@ public class pendulum {
         for(int j=0;j<ArrayElements;j++) {
             for (int i = 0; i < (ArrayElements-1)-j; i++) {
                 int n=input[i].compareTo(input[i+1]);
-                if(n>0){
+                if(n>0)
+                {
                     String temp = input[i];
                     input[i] = input[i + 1];
                     input[i + 1] = temp;

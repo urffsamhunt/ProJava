@@ -104,13 +104,6 @@ public class binary {
         output=Addition(output,"1");
         return output.substring(1);
     }
-    public static String Subtraction (String in0,String in1){
-        String output;
-        String Binary11=Complement(in1);
-        output=Addition(in0,Binary11);
-        output=Addition(output,"1");
-        return output.substring(1);
-    }
     public static String multiplication(){
         String output=Binary0;
         if(Binary0=="0"||Binary1=="0"){
@@ -122,32 +115,6 @@ public class binary {
                 output = Addition(output, Binary0);
             }
             return output;
-        }
-    }
-    public static String division(){
-        String temp="",decimal;
-        int output=0;
-        int i=0;
-        while(true){
-            if(i==0){
-                temp=Subtraction(Binary0,Binary1);
-                i=i+1;
-                output=output+1;
-            }
-            if(Long.parseLong(temp)<Long.parseLong(Binary1)){
-                divisionflag=1;
-                //System.out.println(output+" 01");
-                return "NOT DIVISIBLE";
-            }
-            else if(temp.equals(Binary1)){
-                return BinaryConverter((long)output+1);
-            }
-            else if(Integer.parseInt(temp)==0){
-                //System.out.println(output+" 02");
-                return BinaryConverter((long)output);
-            }
-            output=output+1;
-            temp=Subtraction(temp,Binary1);
         }
     }
     public static void main(String Args[]){
@@ -163,11 +130,7 @@ public class binary {
         System.out.println("The Number in binary for "+inputDecimal0+"\tis "+Binary0);
         System.out.println("The Number in binary for "+inputDecimal1+"\tis "+Binary1);
         System.out.println("Addition        :"+Addition(Binary0,Binary1));
-        System.out.println("Subtraction     :"+Subtraction(Binary0,Binary1));
         System.out.println("Multiplication  :"+multiplication());
-        System.out.println("Division        :"+division());
-        if(divisionflag==1){
-            System.out.println("The Number is not exactly divisible");
-        }
+       
     }
 }

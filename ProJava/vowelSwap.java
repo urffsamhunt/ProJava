@@ -12,7 +12,17 @@ public class vowelSwap {
         int vowelPos[]=new int[input.length()];
         for(int i=0;i<input.length();i++){
             inp[i]=input.charAt(i);
-            if(input.charAt(i)=='a'||input.charAt(i)=='e'||input.charAt(i)=='i'||input.charAt(i)=='o'||input.charAt(i)=='u'||input.charAt(i)=='A'||input.charAt(i)=='E'||input.charAt(i)=='I'||input.charAt(i)=='O'||input.charAt(i)=='U'){
+            if(input.charAt(i)=='a'
+            ||input.charAt(i)=='e'
+            ||input.charAt(i)=='i'
+            ||input.charAt(i)=='o'
+            ||input.charAt(i)=='u'
+            ||input.charAt(i)=='A'
+            ||input.charAt(i)=='E'
+            ||input.charAt(i)=='I'
+            ||input.charAt(i)=='O'
+            ||input.charAt(i)=='U')
+            {
                 vowelPos[i]=1;
             }
             else{

@@ -1,28 +1,6 @@
 package ProJava;
 
 import java.util.*;
-/**
- 
- A sentence in the Special Fashion can be printed by taking two integers (not beyond
- total number of words in the sentence or less than 1). These integers tell the word number of the
- sentence. Replace only those words present at those given integer places by the next character in
- a circular fashion according to the English Alphabets. If both the integers are same then replace
- only one word. let us consider the following examples:
- Input Sentence: He has good Books.
- Input Integers: 2, 4
- Output Sentence: He ibt good Cpplt.
- (i.e. word number 2 and 4 have been replaced by the next characters in a circular fashion)
- Input Sentence: Time and tide waits for
- Input Integers: 3, 3
- Output Sentence: Time and ujef waits for none.
- Write a case sensitive program that reads a sentence from console (the characters of the sentence
- may be capital or small or mixed) and two positive integers and output the same sentence after
- replacing those words present at those given integer places by the next character in a circular
- fashion according to the English Alphabets.
- In the first example given above, word number 2, i.e. “has” is replaced by next characters and
- hence it becomes “ibt”. Similarly, word number 4, i.e. “Books” is replaced by next characters
- and hence it becomes “Cpplt”.
- */
 public class sentenceOper {
     static Scanner in=new Scanner(System.in);
     public static String shift(String input){
